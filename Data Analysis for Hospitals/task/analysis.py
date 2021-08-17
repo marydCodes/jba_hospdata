@@ -2,12 +2,19 @@ import pandas as pd
 
 pd.set_option('display.max_columns', 8)
 
-# had to recalibrate path to my own PC to pass?
+# import CSVs. Had to recalibrate path to my own PC to pass?
 general = pd.read_csv(r"C:\Users\emade\Downloads\test\general.csv")
-print(general.head(20))
-
 prenatal = pd.read_csv(r"C:\Users\emade\Downloads\test\prenatal.csv")
-print(prenatal.head(20))
-
 sports = pd.read_csv(r"C:\Users\emade\Downloads\test\sports.csv")
-print(sports.head(20))
+
+# Change column names to all match general
+prenatal.rename(columns={'HOSPITAL': 'hospital', 'Sex': 'gender'}, inplace=True)
+sports.rename(columns={'Hospital': 'hospital', 'Male/female': 'gender'}, inplace=True)
+
+# Merge dfs
+merged = pd.concat([general, prenatal, sports], ignore_index=True)
+
+# Delete 'Unnamed: 0' column
+merged.drop(columns='Unnamed: 0', inplace=True)
+
+print(merged.sample(n=20, random_state=30))
