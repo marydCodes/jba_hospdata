@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/467509/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Tue, 17 Aug 2021 16:19:04 UTC
+update_date: Wed, 22 Sep 2021 09:10:58 UTC
 stages:
 - id: 801
   step: 12046
@@ -13,13 +13,13 @@ stages:
   is_completed: true
 - id: 803
   step: 12048
-  is_completed: false
+  is_completed: true
 - id: 804
   step: 12049
-  is_completed: false
+  is_completed: true
 - id: 805
   step: 12050
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Introduction to operating systems
@@ -28,12 +28,6 @@ topics:
     theory_id: 13025
   - title: File types
     theory_id: 13017
-  - title: Introduction to pandas
-    theory_id: 10416
-  - title: Series
-    theory_id: 10421
-  - title: DataFrame
-    theory_id: 10933
   - title: CSV
     theory_id: 13164
   - title: Introduction to Python
@@ -52,28 +46,14 @@ topics:
     theory_id: 5913
   - title: Program with numbers
     theory_id: 5872
-  - title: Invoking a function
-    theory_id: 5891
-  - title: Declaring a function
-    theory_id: 5900
   - title: If statement
     theory_id: 5953
   - title: Else statement
     theory_id: 5932
   - title: For loop
     theory_id: 6065
-  - title: Load module
-    theory_id: 6019
-  - title: Create module
-    theory_id: 6057
-  - title: Packages
-    theory_id: 6384
   - title: Command line overview
     theory_id: 8977
-  - title: Parameters and options
-    theory_id: 9746
-  - title: Pip
-    theory_id: 6230
   - title: Introduction to Linux
     theory_id: 9526
   - title: File modes and permissions
@@ -90,6 +70,12 @@ topics:
     theory_id: 8702
   - title: Working with CSV
     theory_id: 11724
+  - title: Introduction to pandas
+    theory_id: 10416
+  - title: Series
+    theory_id: 10421
+  - title: DataFrame
+    theory_id: 10933
   - title: Basic data types
     theory_id: 5852
   - title: Integer arithmetic
@@ -106,14 +92,18 @@ topics:
     theory_id: 5979
   - title: Indexes
     theory_id: 6189
+  - title: Invoking a function
+    theory_id: 5891
+  - title: Declaring a function
+    theory_id: 5900
+  - title: Basic string methods
+    theory_id: 6842
   - title: Boolean logic
     theory_id: 6025
   - title: Comparisons
     theory_id: 5920
   - title: Dictionary
     theory_id: 6481
-  - title: Basic string methods
-    theory_id: 6842
   - title: Split and join
     theory_id: 6972
   1:
@@ -140,12 +130,10 @@ topics:
     theory_id: 11282
   - title: Standard deviation
     theory_id: 11435
-  - title: Quantiles
-    theory_id: 13124
-  - title: Data Visualization
-    theory_id: 13131
   - title: .loc & .iloc
     theory_id: 13343
+  - title: Summarizing categorical columns
+    theory_id: 13351
   - title: Summarizing numeric columns
     theory_id: 13359
   - title: Visualization in pandas
